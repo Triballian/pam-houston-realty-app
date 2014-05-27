@@ -20,10 +20,15 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+#gem 'sdoc', '~> 0.4.0',          group: :doc
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+#gem 'spring',        group: :development
 
 # pam-realty-app
 
@@ -37,10 +42,11 @@ gem 'simple_form'
 gem 'zurb-foundation'
 
 group :development do 
-  gem 'sqlite3'
+  
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'sqlite3'
 
 end
 
