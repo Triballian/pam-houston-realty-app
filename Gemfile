@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,10 +37,10 @@ gem 'simple_form'
 gem 'zurb-foundation'
 
 group :development do 
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'sqlite3' 
 
 end
 
